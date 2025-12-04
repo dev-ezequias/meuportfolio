@@ -108,6 +108,7 @@ li a{
 
 footer{
     background-image: url(../assets/images/wave.svg);
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
     background-repeat: no-repeat; 
     background-size: cover;    
     background-position: center; 
@@ -116,14 +117,39 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
     padding-top: 200px;
+}
+
+footer a{
+    text-decoration: none;
 }
 .section-buttons{
     display: flex;
     justify-content: center;
     width: 50%;
-     gap: 20px;
+    gap: 20px;
+}
+
+.section-buttons i, .social-list i {
+    color: #000000;
+    font-size: 22px;
+    border: 1px solid #028c96;
+    border-radius: 50%;
+    
+    /* Alterações para corrigir a borda: */
+    width: 50px;            /* Define uma largura fixa */
+    height: 50px;           /* Define uma altura igual à largura (cria o quadrado) */
+    display: flex;          /* Habilita flexbox para centralizar o ícone */
+    justify-content: center;/* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    padding: 0;             
+}
+
+.section-buttons a:hover i, 
+.social-list a:hover i {
+    color: #028c96;       
+    background-color: #fff; 
+    transition: 0.3s;     
 }
 
 .div-sociais-bottom{
@@ -133,4 +159,13 @@ footer{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+
+.desenvolvidopor{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color:#028c96;
 }
