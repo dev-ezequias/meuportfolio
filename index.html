@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Ezequias da Silva Cordeiro, desenvolvedor Front-End focado em HTML, CSS e JavaScript.">
+    
+    <title>Ezequias.dev | Portfólio</title>
+
+    <link rel="icon" href="#" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container section-header">
+            <nav>
+                <ul class="top-menu" id="menu-principal">
+                    <li>
+                        <a href="index.html" aria-label="Voltar ao início">
+                            Ezequias Cordeiro
+                        </a>
+                    </li>
+                </ul>
+                <ul class="top-menu navigation-links">
+                    <li><a href="#section-sobre">Sobre</a></li>
+                    <li><a href="#section-formacao">Formação</a></li>
+                    <li><a href="#section-habilidades">Experiência</a></li>
+                </ul>
+                <ul class="menu-contato">
+                    <li><a href="#section-contato" class="btn-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <div class="hero-content">
+                <figure class="hero-image-container">
+                    <img class="foto-perfil" src="./assets/images/Imagem do WhatsApp de 2025-09-27 à(s) 12.14.55_1e224bf2.jpg" alt="Foto de perfil de Ezequias">
+                </figure>
+                <div class="hero-text">
+                    <h1>Olá, eu sou o Ezequias.</h1>
+                    <p>Esse é o meu portfólio</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="section-sobre" class="section-content">
+            <div class="ezequiascordeiro">
+                <h2>Sobre</h2>
+                <img width="300" src="assets/images/Pixel Art style drawing of a person programming in front of a computer screen.png" alt="Ilustração em Pixel Art de um programador">
+            </div>
+            
+            <div class="metas-objetivos">
+                <h2>Formação</h2>
+                <img width="300" src="assets/images/Pixel Art style drawing of a front-end developer with their goals (1).png" alt="Ilustração Pixel Art sobre metas">
+            </div>
+        </section>
+
+        <section id="section-formacao" class="section-content">
+            <h2>Experiências</h2>
+            <article class="card-formacao">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <img width="300" src="assets/images/descomplica.png" alt="Logo Descomplica">
+                <h4>Faculdade</h4>
+                <p>O curso tecnólogo em Análise e Desenvolvimento de Sistemas...</p>
+                <div class="formacao-buttons">   
+                    <a class="btn-small" href="https://descomplica.com.br" target="_blank"><i class="fa-solid fa-link"></i> Site</a>
+                    <a class="btn-small" href="#" target="_blank"><i class="fa-regular fa-file-lines"></i> Grade curricular</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="section-contato" class="section-content">
+            <div class="formulario-container">
+                <h3>Entre em contato</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input id="name" name="name" type="text" placeholder="Seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" name="phone" type="tel" placeholder="(XX) 9XXXX-XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="texto">Mensagem</label>
+                        <textarea id="texto" name="message" rows="4" maxlength="1000" placeholder="Digite sua mensagem aqui..." required></textarea> 
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+                
+                <div class="contact-icons">
+                    <p>Ou através de:</p>
+                    <ul>
+                        <li><img width="48" src="./assets/images/icons8-whatsapp.svg" alt="WhatsApp"></li>
+                        <li><img width="48" src="./assets/images/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="E-mail"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section-buttons">
+                <a class="btn" href="mailto:ezequias.sccontato@icloud.com" target="_blank" aria-label="Enviar e-mail">
+                    <i class="fa-solid fa-envelope fa-lg"></i> E-mail
+                </a>
+                <a class="btn button-wa" href="https://wa.link/clbg2t" target="_blank" aria-label="Conversar no WhatsApp">
+                    <i class="fa-brands fa-whatsapp fa-xl"></i> WhatsApp
+                </a>
+                <a class="btn" href="https://docs.google.com/document/d/seu-link-aqui" target="_blank" aria-label="Baixar Currículo">
+                    <i class="fa-solid fa-circle-arrow-down fa-xl"></i> Ver currículo
+                </a>
+        </div>
+        <div class="div-sociais-topo">
+            <ul class="social-list">
+                <li><a href="https://www.linkedin.com/in/dev-ezequias/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/dev-ezequias" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://x.com/quiasssc" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://discord.gg/UqAAXhMv" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

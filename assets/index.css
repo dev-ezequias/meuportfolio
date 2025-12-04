@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: linear-gradient(to right top, #051937, #00466e, #007aa0, #00b2c7, #12ebe1);
+    color: #f0f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image-container {
+    /* Define um tamanho maior que a imagem (que tem 200px) para o blob aparecer */
+    width: 420px; 
+    height: 420px;
+    /* Configuração do Background */
+    background-image: url('../assets/images/blob.svg'); /* Verifique se o caminho está correto */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ajusta o blob para caber no container */
+
+    /* Centraliza a foto do perfil dentro desse container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Centraliza o container na tela (opcional, dependendo do layout pai) */
+    margin: 0 auto; 
+}
+
+main img{
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+header li a{
+    color: #ffffff;
+}
+
+
+/* Remova o background do nav e coloque no header */
+header {
+    background-image: url('../assets/images/wavenavcorreto.svg');
+    background-repeat: no-repeat;
+    
+    /* Mantém a imagem centralizada na parte de baixo */
+    background-position: bottom center;
+
+    /* A SOLUÇÃO: 
+       - Definimos a largura como 105% (um pouco mais que o total) para garantir que cubra as bordas.
+       - Definimos a altura como 'auto' para que a onda não fique distorcida/esticada. */
+    background-size: 105% auto;
+    
+    width: 100%;
+    
+    /* Aumentei o padding inferior para dar espaço para a onda aparecer bem abaixo do texto.
+       Ajuste esse valor (px) se a sua onda for mais alta ou mais baixa. */
+    padding-bottom: 100px; 
+}
+
+/* O nav fica apenas com o layout flex, sem imagem de fundo */
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 25px;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 20px; 
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: blue;
+}
+
+footer{
+    background-image: url(../assets/images/wave.svg);
+    background-repeat: no-repeat; 
+    background-size: cover;    
+    background-position: center; 
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+    _
+}
+.section-buttons{
+    justify-content: space-around;
+}
+.social-list{
+    display: flex;
+    gap: 20px;
+}
