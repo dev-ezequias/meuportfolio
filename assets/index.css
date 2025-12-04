@@ -7,7 +7,7 @@
 html{
     background-image: linear-gradient(to right top, #051937, #00466e, #007aa0, #00b2c7, #12ebe1);
     color: #f0f8ff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero-image-container {
@@ -15,18 +15,47 @@ html{
     width: 420px; 
     height: 420px;
     /* Configuração do Background */
-    background-image: url('../assets/images/blob.svg'); /* Verifique se o caminho está correto */
+    background-image: url('../assets/images/blob.svg'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* Ajusta o blob para caber no container */
-
-    /* Centraliza a foto do perfil dentro desse container */
+    background-size: contain; 
     display: flex;
     justify-content: center;
     align-items: center;
     
     /* Centraliza o container na tela (opcional, dependendo do layout pai) */
     margin: 0 auto; 
+}
+
+#menu-principal a{
+    font-weight: 700;
+    font-size: 25px;
+    margin-right: 50px;
+     color: #028c96;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+#menu-principal a:hover{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 70%;
+}
+
+.btn-contato{
+    border: 1px solid #028c96;
+    background-color: #028c96;
+    color: #f0f8ff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.btn-contato:hover{
+    transition: color 0.2s ease-in-out;
+    background-color: transparent;
+    color: #028c96;
+
 }
 
 main img{
@@ -37,29 +66,22 @@ main img{
 }
 
 header li a{
-    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
 }
 
-
-/* Remova o background do nav e coloque no header */
 header {
     background-image: url('../assets/images/wavenavcorreto.svg');
     background-repeat: no-repeat;
-    
-    /* Mantém a imagem centralizada na parte de baixo */
     background-position: bottom center;
-
-    /* A SOLUÇÃO: 
-       - Definimos a largura como 105% (um pouco mais que o total) para garantir que cubra as bordas.
-       - Definimos a altura como 'auto' para que a onda não fique distorcida/esticada. */
     background-size: 105% auto;
-    
     width: 100%;
+    padding-bottom: 350px; 
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
     
-    /* Aumentei o padding inferior para dar espaço para a onda aparecer bem abaixo do texto.
-       Ajuste esse valor (px) se a sua onda for mais alta ou mais baixa. */
-    padding-bottom: 100px; 
 }
+
 
 /* O nav fica apenas com o layout flex, sem imagem de fundo */
 nav {
@@ -67,6 +89,7 @@ nav {
     justify-content: space-around;
     gap: 20px;
     padding: 25px;
+    align-items: center
 }
 
 .navigation-links {
@@ -92,13 +115,22 @@ footer{
     min-height: 300px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center
-    _
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 200px;
 }
 .section-buttons{
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+     gap: 20px;
+}
+
+.div-sociais-bottom{
+    width: 50%;
 }
 .social-list{
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
