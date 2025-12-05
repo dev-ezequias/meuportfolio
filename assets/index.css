@@ -21,6 +21,15 @@ html{
     background-color:  #028c96;
 }
 
+.navigation-links{
+    display: flex;
+    position: relative;
+    right: 80px;
+    width: 50%;
+    gap: 30px;
+    justify-content: center;
+}
+
 .hero-image-container {
     /* Define um tamanho maior que a imagem (que tem 200px) para o blob aparecer */
     width: 40%; 
@@ -156,11 +165,6 @@ nav {
     gap: 20px;
     padding: 25px;
     align-items: center
-}
-
-.navigation-links {
-    display: flex;
-    gap: 20px; 
 }
 
 ul{
