@@ -56,6 +56,30 @@ html{
     font-size: 60px;
 }
 
+.ezequiascordeiro , .formação, #section-exp{
+    border-right: 2px solid #ffffff;
+    padding: 20px;
+    /* border-radius: 10px; */
+    display: flex;
+    gap: 0px 30px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.ezequiascordeiro p{
+    text-align: justify;
+}
+
+.ezequiascordeiro h2, .formação h2, #section-exp h2{
+    color: #028c96;
+    writing-mode: vertical-rl; /* Define o fluxo na vertical (direita para esquerda) */
+    text-orientation: upright; /* Mantém as letras em pé (não deitadas) */
+    letter-spacing: 2px;       /* Opcional: Espaçamento entre as letras */
+    text-align: center;        /* Centraliza o texto na coluna */
+    text-transform: uppercase;
+    font-size:25px; 
+}
+
 #menu-principal a{
     font-weight: 700;
     font-size: 25px;
@@ -91,6 +115,13 @@ html{
     position: relative;
     bottom: 150px;
     display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 150px;
+    gap: 20px 0px;
 }
 
 main img{
