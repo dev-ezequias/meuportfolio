@@ -172,6 +172,43 @@ li a{
     color: blue;
 }
 
+#section-contato{
+    border-left: 2px solid #ffffff;
+    padding: 20px;
+    /* border-radius: 10px; */
+    display: flex;
+    gap: 0px 30px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.formulario-container{
+    display: flex;
+    width: 100%;
+}
+
+.formulario-container h2{
+    margin-right: 20px;
+    width: auto;
+}
+
+.formulario-container form{
+    padding: 30px;
+    width: 50%;
+}
+
+#section-contato h2{
+    display: flex;
+    align-items: flex-end;
+    color: #028c96;
+    writing-mode: vertical-rl; /* Define o fluxo na vertical (direita para esquerda) */
+    text-orientation: upright; /* Mantém as letras em pé (não deitadas) */
+    letter-spacing: 2px;       /* Opcional: Espaçamento entre as letras */
+    text-align: center;        /* Centraliza o texto na coluna */
+    text-transform: uppercase;
+    font-size:25px; 
+}
+
 footer{
     background-image: url(../assets/images/wave.svg);
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
