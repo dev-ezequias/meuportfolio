@@ -281,3 +281,51 @@ footer a{
     text-decoration: none;  
     color: #f0f8ff;
 }
+
+.desenvolvidopor a:hover{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 70%;
+}
+
+.btn-topo {
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px;    /* Distância do rodapé da janela */
+  right: 20px;     /* Distância da direita */
+  z-index: 1000;   /* Garante que fique sobre outros elementos */
+  
+  background-color:  #028c96; /* Cor de fundo */
+  color: white;           /* Cor da seta */
+  border-radius: 50%;     /* Deixa redondinho */
+  width: 50px;
+  height: 50px;
+  
+  /* Centralizar o ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease; /* Animação suave no hover */
+  
+  /* Estado inicial: Escondido (opcional, veja o JS abaixo) */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+/* 3. Efeito Hover (passar o mouse) */
+.btn-topo:hover {
+  background-color:transparent;
+  transform: translateY(-5px); /* Leve subida ao passar o mouse */
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+  color:  #028c96;
+}
+
+/* 4. Classe para mostrar o botão (ativada via JS) */
+.btn-topo.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
