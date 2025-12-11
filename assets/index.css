@@ -147,6 +147,50 @@ main{
     gap: 20px 0px;
 }
 
+/* Container para limitar o tamanho */
+.ezequias-efeito {
+  font-size: 60px;
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Ajuste conforme o tamanho do seu texto */
+  right: 80px;
+  background-color:transparent; /* Fundo escuro destaca melhor */
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif; /* Fontes grossas funcionam melhor */
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.snake-text {
+  fill: #028c96;   /* O miolo da letra fica transparente */
+  stroke: #f0f8ff;    /* A cor da cobrinha */
+  stroke-width: 2px;   /* A grossura da cobrinha */
+  
+  /* A MÁGICA ACONTECE AQUI:
+     O primeiro número (30) é o tamanho da "cobrinha".
+     O segundo número (250) é o tamanho do espaço vazio entre uma cobra e outra.
+     Aumente o segundo número se quiser que a cobra pareça "sozinha".
+  */
+  stroke-dasharray: 30 250;
+  
+  /* Animação */
+  animation: snakeRun 8s linear infinite;
+}
+
+@keyframes snakeRun {
+  /* Movemos a linha tracejada ao longo do caminho do texto */
+  0% {
+    stroke-dashoffset: 280; /* Começa antes */
+  }
+  100% {
+    stroke-dashoffset: 0;   /* Termina o ciclo */
+  }
+}
+
 main img{
     width: 200px; 
     height: 200px;
