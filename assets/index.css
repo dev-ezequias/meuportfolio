@@ -35,7 +35,7 @@ html{
     width: 40%; 
     height: 420px;
     /* Configuração do Background */
-    background-image: url('../assets/images/blob.svg'); 
+    /* background-image: url('../assets/images/blob.svg');  */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; 
@@ -47,10 +47,24 @@ html{
     margin: 0px 0px ; 
 }
 
-/* .foto-perfil{
-    width: 300px;
-    height: 300px;
-} */
+.foto-perfil{
+    width: 500px;
+    height: 500px;
+    object-fit: cover; /* Garante que a foto não distorça */
+    
+    /* A mágica acontece aqui */
+    -webkit-mask-image: url('../assets/images/blob.svg');  /* Para Chrome/Safari/Edge */
+    mask-image: url('../assets/images/blob.svg');          /* Padrão */
+    
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    
+    -webkit-mask-position: center;
+    mask-position: center;
+    
+    -webkit-mask-size: contain; /* Ajusta o SVG ao tamanho da img */
+    mask-size: contain;
+} 
 
 .hero-text{
     display: flex;
