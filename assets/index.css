@@ -90,6 +90,10 @@ html{
 }
 
 .div-h4{
+    text-transform: uppercase ;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -97,10 +101,13 @@ html{
     bottom: 80px;
     right: 35px;
      gap: 10px 0px;
-    font-size: 18px;
-    color: #000000;
-    background-color: #f0f8ff;
-    border-radius: 20px;
+    font-size: 60px;
+    color: #f0f8ff;
+    background: #036a96;
+    background: radial-gradient(circle,rgba(3, 106, 150, 1) 0%, rgba(1, 29, 61, 1) 100%);
+    /* border: 3px solid #f0f8ff; */
+    border-radius: 0px 20px 100px   0px;
+    border-left: 2px solid     #f0f8ff;
     padding: 40px;
     /* border-bottom: 2px solid #fff; */
     box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
@@ -108,9 +115,11 @@ html{
 
 .div-h4 h4{
     width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
-.ezequiascordeiro , .formação, #section-exp{
+.ezequiascordeiro , .Projetos, #section-exp{
     border-right: 2px solid #ffffff;
     border-radius: 5px;
     padding: 20px;
@@ -123,10 +132,12 @@ html{
 
 .ezequiascordeiro p{
     text-align: justify;
+    display: flex;
+    align-items: center;
 }
 
-.ezequiascordeiro h2, .formação h2, #section-exp h2{
-    color: #028c96;
+.ezequiascordeiro h2, .Projetos h2, #section-exp h2{
+    color: #f0f8ff;
     writing-mode: vertical-rl; /* Define o fluxo na vertical (direita para esquerda) */
     text-orientation: upright; /* Mantém as letras em pé (não deitadas) */
     letter-spacing: 2px;       /* Opcional: Espaçamento entre as letras */
@@ -155,6 +166,7 @@ html{
 
 .class-formacao p{
     width: 80%;
+    margin-bottom: 10px;
 }
 
 .div-cards{
@@ -166,6 +178,11 @@ html{
 
 .div-cards h4{
     margin: 15px 0px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #028c96;
+    color: #f0f8ff;
 }
 
 #menu-principal a{
@@ -279,7 +296,7 @@ header {
     background-image: url('../assets/images/wavenavcorreto.svg');
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 105% auto;
+    background-size: cover;
     width: 100%;
     padding-bottom: 350px; 
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
@@ -292,7 +309,7 @@ nav {
     justify-content: space-around;
     gap: 20px;
     padding: 25px;
-    align-items: center
+    align-items: center;
 }
 
 ul{
@@ -329,8 +346,7 @@ li a{
 
 .formulario-container h3{
     width: 60%;
-    position: relative;
-    left: 125px; 
+    position: relative; 
     background-color: #fff;
     border-radius: 5px;
     padding: 5px 10px;
@@ -342,21 +358,21 @@ li a{
 .formulario-container form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 30px;
     width: 50%;
     background: #036a96;
     background: radial-gradient(circle,rgba(3, 106, 150, 1) 0%, rgba(1, 29, 61, 1) 100%);
     color: #000000;
     border-radius: 20px;
-    /* border: 3px solid #f0f8ff; */
+    border: 5px solid #f0f8ff;
 }
 
 #section-contato h2{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    color: #028c96;
+    color: #f0f8ff;
     writing-mode: vertical-rl; /* Define o fluxo na vertical (direita para esquerda) */
     text-orientation: upright; /* Mantém as letras em pé (não deitadas) */
     letter-spacing: 2px;       /* Opcional: Espaçamento entre as letras */
