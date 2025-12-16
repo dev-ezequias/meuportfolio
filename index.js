@@ -17,3 +17,15 @@ btnTopo.addEventListener("click", (e) => {
     behavior: "smooth"
   });
 });
+
+function enviar(event) {
+  event.preventDefault()
+  if (document.getElementById('texto').value && document.getElementById('email').value.includes('@') && document.getElementById('name').value){
+    let enviar = document.getElementById('btn-submit')
+
+      enviar.innerHTML = 'Enviado!' 
+  }
+  else{
+    alert('Por favor, preencha todos os campos!')
+  }
+}
