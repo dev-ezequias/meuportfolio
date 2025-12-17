@@ -65,7 +65,10 @@
   gap: 10px;
 }
 .content .section-inicio h2 {
+  font-size: 18px;
   color: oklch(92.2% 0 0deg);
+  text-align: right;
+  width: 50%;
 }
 .content .section-inicio p {
   font-weight: bold;

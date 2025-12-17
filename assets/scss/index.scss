@@ -68,7 +68,10 @@ $quint-color: oklch(0.985 0 0);
     padding: 15px;
     gap: 10px;
     h2{
+        font-size: 18px;
         color:$third-color;
+        text-align: right;
+        width: 50%;
     }
     p{
         font-weight: bold;
