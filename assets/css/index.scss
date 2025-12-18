@@ -83,8 +83,10 @@ $quint-color: oklch(0.985 0 0);
     }
     .div-texto p{
         font-weight: bold;
+        font-family: "Shadows Into Light Two", cursive;
         font-size: 20px;
-        color: $secondary-color;
+        margin-top: 40px;
+        color: #c58106;
     }
   }
 

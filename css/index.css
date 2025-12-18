@@ -79,8 +79,10 @@
 }
 .content .section-inicio .div-texto p {
   font-weight: bold;
+  font-family: "Shadows Into Light Two", cursive;
   font-size: 20px;
-  color: #bdc3c7;
+  margin-top: 40px;
+  color: #c58106;
 }
 .content .classfooter-developer {
   width: 100%;
