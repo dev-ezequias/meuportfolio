@@ -18,25 +18,52 @@
     <section class="layout-container">
         <header class="sidebar">
             <nav class="nav-barra-navegacao">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Formação</a></li>
+            <ul>
+                    <li><a href="#inicio" class="nav-link active" data-target="inicio">Início</a></li>
+                    <li><a href="#sobre" class="nav-link" data-target="sobre">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link" data-target="contato">Contato</a></li>
+                    <li><a href="#formacao" class="nav-link" data-target="formacao">Formação</a></li>
                 </ul>
             </nav>
         </header>
         <main class="content">
-            <section class="section-inicio">
+            <section id="inicio" class="section-content tab-content active">
                 <div class="div-texto">
                     <h1>Esse é o meu portfólio</h1>
                     <h2>Apaixoado por tecnologia, interfaces intuitivas e responsivas</h2>
                     <p>Front End Developer</p>
                 </div>
             </section>
+
+            <section id="sobre" class="section-content tab-content">
+                <div class="div-texto">
+                    <img class="foto-perfil" src="assets/images/Imagem do WhatsApp de 2025-09-27 à(s) 12.15.45_30a7696e.jpg" alt="Minha foto de perfil">
+                    <div class="div-texo-sobre">
+                        <h2>Olá, eu sou o Ezequias</h2>
+                        <p>Em busca de oportunidade como estagiário ou júnior em Desenvolvimento de Software. Trago uma sólida experiência em atendimento ao cliente, onde desenvolvi fortes habilidades de comunicação, escuta ativa e resolução ágil de problemas, competências que agora aplico no desenvolvimento de soluções tecnológicas. Atualmente estou focado em criar interfaces intuitivas e acessíveis, e aprimorar meus conhecimentos em Javascript, também tenho total interesse em aprender novas linguagens.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="section-content tab-content">
+                <div class="div-texto">
+                    <h2>Entre em contato</h2>
+                    
+                </div>
+            </section>
+
+            <section id="formacao" class="section-content tab-content">
+                <div class="div-texto">
+                    <h1>Esse é o meu portfólio</h1>
+                    <h2>Apaixoado por tecnologia, interfaces intuitivas e responsivas</h2>
+                    <p>Front End Developer</p>
+                </div>
+            </section>
+
             <section class="classfooter-developer">
                 <a href="https://linktr.ee/devezequias" target="_blank">Desenvolvido por Ezequias Cordeiro © </a>
             </section>
         </main>
+<script src="index.js"></script>
 </body>
 </html>

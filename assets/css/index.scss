@@ -3,12 +3,24 @@ $secondary-color:  #bdc3c7;
 $third-color:  oklch(0.922 0 0);
 $quarter-color: oklch(0.87 0 0);
 $quint-color: oklch(0.985 0 0);
+$sixth-color:#c58106;
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Poppins', sans-serif;
 }
 
 .layout-container {
@@ -16,78 +28,159 @@ $quint-color: oklch(0.985 0 0);
   min-height: 100vh; /* Garante que o container ocupe a altura toda da tela */
 }
 
+body{
+    background: $primary-color;
+    background: #222233;
+    background: radial-gradient(circle,rgba(34, 34, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+h1{
+    font-family: "Limelight", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: $quint-color;
+}
+
+.layout-container {
+    display: flex;
+    min-height: 100vh;
+}
+
 .sidebar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px; /* Largura fixa do menu */
-//   background-color: $primary-color;
-  color: white;
-  padding: 20px 0px 20px 20px;
-  position: sticky; top: 0; height: 100vh; 
-    nav ul {
+    display: flex;
+    width: 250px;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    
+    nav {
         display: flex;
-        flex-direction: column; /* AQUI está a chave da mudança interna */
-        list-style: none;
-        padding: 0;
+        width: 50%;
+        justify-content: flex-end;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+        }
     }
+
     a {
         text-decoration: none;
         color: #bdc3c7;
         font-size: 16px;
-        display: block; /* Para aumentar a área clicável */
+        display: block;
         padding: 10px;
         transition: 0.3s;
         border-right: 1px solid transparent;
-        &:hover{
+
+        &:hover, &.active { // Adicionei .active aqui também para estilizar o menu selecionado
             border-right: 1px solid $quint-color;
             color: $quint-color;
         }
     }
-    nav{
-        border-left: 1px solid $secondary-color;
-        display: flex;
-        width: 50%;
-        justify-content: flex-end;
-    }
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Garante que o main tenha a altura da tela */
-  flex: 1;
-
-  .section-inicio {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; // Centraliza o conteúdo principal verticalmente
-    flex: 1; // ESSA LINHA É A CHAVE: ela faz o conteúdo crescer e empurrar o footer
-    width: auto;
-    padding: 15px;
-    gap: 10px;
-    .div-texto{
-        display: flex;
+    min-height: 100vh;
+    flex: 1;
+
+    // LÓGICA DAS ABAS AQUI
+    .tab-content {
+        display: none; // Esconde tudo por padrão
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
         width: auto;
-        align-items: flex-end;
-        // border: 1px solid white;
+        padding: 15px;
+        gap: 10px;
+
+        // Quando tiver a classe active, aparece e anima
+        &.active {
+            display: flex;
+            animation: slideDown 0.6s ease forwards;
+        }
+
+        .div-texto {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+            p {
+                font-weight: bold;
+                font-family: "Shadows Into Light Two", cursive;
+                font-size: 24px;
+                margin-top: 40px;
+                color: $sixth-color;
+            }
+          h1{
+              font-family: "Limelight", sans-serif;
+              font-weight: 900;
+              font-size: 52px;
+              color: $quint-color;
+          }
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: $third-color;
+            text-align: right;
+            width: 70%;
+        }
+    }
+
+  #sobre{
+    .div-texto{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .div-texo-sobre{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      // background-color:oklch(0.145 0 0);
+      // padding: 20px;
+      border-radius: 10px;
     }
     h2{
-        font-size: 18px;
-        font-weight: normal;
-        color: $third-color;
-        text-align: right;
-        width: 70%;
+      display: flex;
+      font-size: 36px;
+      font-family: "Limelight", sans-serif;
+      color: $quint-color;
     }
-    .div-texto p{
-        font-weight: bold;
-        font-family: "Shadows Into Light Two", cursive;
-        font-size: 20px;
-        margin-top: 40px;
-        color: #c58106;
+    p{
+      font-family: 'Inter', sans-serif;
+      text-align: justify;
+      color: $quint-color;
+      font-weight: normal;
+      margin-top: 20px;
     }
+
+    .foto-perfil{
+    width: 550px;
+    height: 550px;
+    object-fit: cover; /* Garante que a foto não distorça */
+    /* A mágica acontece aqui */
+    -webkit-mask-image: url('../assets/images/blob.svg');  /* Para Chrome/Safari/Edge */
+    mask-image: url('../assets/images/blob.svg');          /* Padrão */
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain; /* Ajusta o SVG ao tamanho da img */
+    mask-size: contain;
+    
+} 
   }
 
   .classfooter-developer {
@@ -112,16 +205,4 @@ $quint-color: oklch(0.985 0 0);
   }
 }
 
-body{
-    background: $primary-color;
-    background: #222233;
-    background: radial-gradient(circle,rgba(34, 34, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
-}
-
-h1{
-    font-family: "Limelight", sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-    color: $quint-color;
-}
 
