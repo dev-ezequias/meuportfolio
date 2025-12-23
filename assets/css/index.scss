@@ -4,6 +4,8 @@ $third-color:  oklch(0.922 0 0);
 $quarter-color: oklch(0.87 0 0);
 $quint-color: oklch(0.985 0 0);
 $sixth-color:#c58106;
+$seventh-color: #00a6f4;
+$eighth-color: #0069a8;
 
 @keyframes slideDown {
   from {
@@ -32,13 +34,6 @@ body{
     background: $primary-color;
     background: #222233;
     background: radial-gradient(circle,rgba(34, 34, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
-}
-
-h1{
-    font-family: "Limelight", sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-    color: $quint-color;
 }
 
 .layout-container {
@@ -125,6 +120,14 @@ h1{
               font-weight: 900;
               font-size: 52px;
               color: $quint-color;
+              font-size: 65px;
+              background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+              background-clip: text;
+              -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
+              /* 3. Torne a cor original do texto transparente para o fundo aparecer */
+              color: transparent;
+              /* -webkit-text-fill-color garante que funcione mesmo se o browser tentar forçar uma cor */
+              -webkit-text-fill-color: transparent;
           }
         }
 
@@ -139,31 +142,97 @@ h1{
 
   #sobre{
     .div-texto{
+      width: 80%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      background: rgba(75, 67, 67, 0.17);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(75, 67, 67, 0.03);
     }
-    .div-texo-sobre{
+    .div-texto-sobre{
       width: 40%;
       display: flex;
       flex-direction: column;
       // background-color:oklch(0.145 0 0);
       // padding: 20px;
       border-radius: 10px;
+      padding: 20px;
+      background: rgba(75, 67, 67, 0.17);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(75, 67, 67, 0.03);
+    }
+    .class-buttons-texto-sobre{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+
+
+    .class-buttons-texto-sobre a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     }
     h2{
+      width: 100%;
       display: flex;
-      font-size: 36px;
+      justify-content: center;
+      font-size: 30px;
       font-family: "Limelight", sans-serif;
-      color: $quint-color;
+      background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
+      /* 3. Torne a cor original do texto transparente para o fundo aparecer */
+      color: transparent;
+      /* -webkit-text-fill-color garante que funcione mesmo se o browser tentar forçar uma cor */
+      -webkit-text-fill-color: transparent;
     }
     p{
       font-family: 'Inter', sans-serif;
+      font-size: 20px;
       text-align: justify;
       color: $quint-color;
       font-weight: normal;
       margin-top: 20px;
+    }
+    .button-fake-curriculo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      padding: 5px;
+      margin: 0px 10px;
+      gap: 0px 10px;
+      border-radius: 5px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      text-decoration: none;
+      color:$quint-color;
+      background: $seventh-color;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid $seventh-color;
+      transition: 0.2s ease-in-out;
+    }
+    .button-fake-curriculo:hover{
+      background: $eighth-color;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid $eighth-color;
+      transition: 0.2s ease-in-out;
     }
 
     .foto-perfil{
@@ -182,6 +251,180 @@ h1{
     
 } 
   }
+
+#contato{
+  background-color: transparent;
+  .div-texto{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(75, 67, 67, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(75, 67, 67, 0.03);
+  }
+  h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Limelight", sans-serif;
+    background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
+    /* 3. Torne a cor original do texto transparente para o fundo aparecer */
+    color: transparent;
+    /* -webkit-text-fill-color garante que funcione mesmo se o browser tentar forçar uma cor */
+    -webkit-text-fill-color: transparent;
+  }
+  .form-global{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    gap: 15px 0px;
+  }
+
+  .form-group label{
+      color: #f0f8ff;
+      font-weight: 700;
+      display: flex;
+  }
+
+  .form-group input{
+      width:300px;
+      padding: 5px 20px;
+      font-family: "Poppins", sans-serif;
+      border-radius: 3px;
+      color: #000000;
+      border: none;
+      background-color: #f0f8ff;
+      border-bottom: 2px solid #ffffff;
+  }
+
+  .form-group input:focus{
+      outline: none;
+  }
+
+  .form-group textarea{
+      resize: none;              /* Trava o tamanho */
+      width: 300px;               /* Opcional: ocupa a largura disponível */
+      height: 120px;
+      padding: 5px 20px;
+      font-family: "Poppins", sans-serif;
+      border-radius: 5px;
+      color:#000;
+      border: none;
+      background-color: #ffffff;
+  }
+
+  .form-group textarea:focus{
+      outline: none;             /* Remove o brilho padrão */
+  }
+
+  .btn-submit {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f3f7fe;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: 0.3s;
+  }
+
+  .btn-submit:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  .social-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    i{
+      padding: 15px;
+      color: $seventh-color;
+      font-size: 18px;
+      transition: 0.2s ease-in-out;
+    }
+    i:hover{
+      color:  #3b82f6;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
+#formacao{
+  background-color: transparent;
+
+.div-texto{
+  width: 80%;
+      border-radius: 10px;
+      padding: 20px;
+      background: rgba(75, 67, 67, 0.17);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(75, 67, 67, 0.03);
+}
+  h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Limelight", sans-serif;
+    background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
+    /* 3. Torne a cor original do texto transparente para o fundo aparecer */
+    color: transparent;
+    /* -webkit-text-fill-color garante que funcione mesmo se o browser tentar forçar uma cor */
+    -webkit-text-fill-color: transparent;
+  }
+  .class-texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  p{
+
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: $quint-color;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+  .class-formacao{
+    display: flex;
+    flex-direction: column;
+    // background-color: #c58106;
+  }
+  .div-cards{
+    width: 500px;
+    padding: 20px;
+    margin: 40px 0px;
+    background: rgba(75, 67, 67, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(75, 67, 67, 0.03);
+  }
+}
 
   .classfooter-developer {
     width: 100%;
