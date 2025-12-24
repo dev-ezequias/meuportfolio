@@ -94,15 +94,14 @@ body {
 }
 .content .tab-content .div-texto p {
   font-weight: bold;
-  font-family: "Shadows Into Light Two", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   margin-top: 40px;
-  color: #c58106;
+  color: #00a6f4;
 }
 .content .tab-content .div-texto h1 {
-  font-family: "Limelight", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
-  font-size: 52px;
   color: oklch(98.5% 0 0deg);
   font-size: 65px;
   background-image: linear-gradient(90deg, rgb(42, 123, 155) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
@@ -164,7 +163,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  font-family: "Limelight", sans-serif;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(90deg, rgb(42, 123, 155) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
   background-clip: text;
   -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
@@ -246,7 +246,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  font-family: "Limelight", sans-serif;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(90deg, rgb(42, 123, 155) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
   background-clip: text;
   -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
@@ -334,6 +335,7 @@ body {
 }
 .content #formacao .div-texto {
   width: 80%;
+  height: auto;
   border-radius: 10px;
   padding: 20px;
   background: rgba(75, 67, 67, 0.17);
@@ -348,7 +350,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  font-family: "Limelight", sans-serif;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(90deg, rgb(42, 123, 155) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
   background-clip: text;
   -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
@@ -370,21 +373,48 @@ body {
   color: oklch(98.5% 0 0deg);
   font-weight: normal;
   margin-top: 20px;
+  color: oklch(98.5% 0 0deg);
+  margin-bottom: 20px;
 }
 .content #formacao .class-formacao {
   display: flex;
   flex-direction: column;
 }
+.content #formacao .class-section-cards-e-texto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+.content #formacao .class-section-cards-e-texto .div-cards:hover {
+  transition: 0.35s;
+}
+.content #formacao .class-section-cards-e-texto > .div-cards:not(:hover) {
+  transform: scale(0.9);
+  transition: 0.35s;
+}
 .content #formacao .div-cards {
-  width: 500px;
+  width: 400px;
   padding: 20px;
-  margin: 40px 0px;
+  margin: 10px 0px;
   background: rgba(75, 67, 67, 0.17);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(75, 67, 67, 0.03);
+}
+.content #formacao .div-cards h4 {
+  color: oklch(98.5% 0 0deg);
+}
+.content #formacao .div-cards p {
+  width: 100%;
+  text-align: start;
+}
+.content #formacao .div-cards h5 {
+  font-size: 18px;
+  color: #00a6f4;
 }
 .content .classfooter-developer {
   width: 100%;

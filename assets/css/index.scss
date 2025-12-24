@@ -108,17 +108,17 @@ body{
             flex-direction: column;
             align-items: flex-end;
             
+            
             p {
                 font-weight: bold;
-                font-family: "Shadows Into Light Two", cursive;
+                font-family: "Poppins", sans-serif;
                 font-size: 24px;
                 margin-top: 40px;
-                color: $sixth-color;
+                color: #00a6f4;
             }
           h1{
-              font-family: "Limelight", sans-serif;
+              font-family: "Poppins", sans-serif;
               font-weight: 900;
-              font-size: 52px;
               color: $quint-color;
               font-size: 65px;
               background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
@@ -189,7 +189,8 @@ body{
       display: flex;
       justify-content: center;
       font-size: 30px;
-      font-family: "Limelight", sans-serif;
+      font-weight: 900;
+      font-family: "Poppins", sans-serif;
       background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
       background-clip: text;
       -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
@@ -273,7 +274,8 @@ body{
     display: flex;
     justify-content: center;
     font-size: 30px;
-    font-family: "Limelight", sans-serif;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
     background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
@@ -369,7 +371,8 @@ body{
   background-color: transparent;
 
 .div-texto{
-  width: 80%;
+      width: 80%;
+      height: auto;
       border-radius: 10px;
       padding: 20px;
       background: rgba(75, 67, 67, 0.17);
@@ -384,7 +387,8 @@ body{
     display: flex;
     justify-content: center;
     font-size: 30px;
-    font-family: "Limelight", sans-serif;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
     background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text; /* Essencial para suporte (Chrome, Safari, e outros) */
@@ -407,22 +411,55 @@ body{
     color: $quint-color;
     font-weight: normal;
     margin-top: 20px;
+    color: $quint-color;
+    margin-bottom: 20px;
   }
   .class-formacao{
     display: flex;
     flex-direction: column;
     // background-color: #c58106;
   }
+
+.class-section-cards-e-texto{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  // margin-left: 20px;
+}
+
+.class-section-cards-e-texto .div-cards:hover{
+  transition: .35s;
+}
+
+.class-section-cards-e-texto > .div-cards:not(:hover){
+  transform: scale(0.9);
+  transition: .35s;
+}
+
   .div-cards{
-    width: 500px;
+    width: 400px;
     padding: 20px;
-    margin: 40px 0px;
+    margin: 10px 0px;
     background: rgba(75, 67, 67, 0.17);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(75, 67, 67, 0.03);
+    h4{
+      color: $quint-color;
+    }
+    p{
+      width: 100%;
+      text-align: start;
+
+    }
+    h5{
+      font-size: 18px;
+      color: $seventh-color;
+    }
   }
 }
 
